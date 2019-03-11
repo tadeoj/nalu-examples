@@ -223,3 +223,7 @@ fabric.properties
 .idea/httpRequests
 target
 *.info
+
+# Bazel gen directories
+bazel-*
+.ijwb
