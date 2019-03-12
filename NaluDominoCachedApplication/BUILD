@@ -29,8 +29,12 @@ gwt_application(
     visibility = ["//visibility:public"],
     deps = [
         "@com_github_nalukit_nalu//jar",
+        "@com_github_nalukit_nalu_plugin_core_web//jar",
         "@com_github_nalukit_nalu_plugin_elemental2//jar",
         "@com_github_nalukit_nalu_processor//jar",
+        "@com_google_elemental2_elemental2_dom//jar",
         "@org_dominokit_domino_ui//jar",
+        "@org_dominokit_domino_ui_sources//jar",
+        "@org_jboss_gwt_elemento_elemento_core//jar",
     ],
 )
