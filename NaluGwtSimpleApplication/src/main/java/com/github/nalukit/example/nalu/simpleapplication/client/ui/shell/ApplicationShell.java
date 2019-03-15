@@ -32,8 +32,7 @@ import com.google.gwt.user.client.ui.*;
  * severeal areas.
  */
 @Shell("application")
-public class ApplicationShell
-    extends AbstractShell<NaluSimpleApplicationContext> {
+public class ApplicationShell extends AbstractShell<NaluSimpleApplicationContext> {
 
   SimpleLayoutPanel headerWidget;
 

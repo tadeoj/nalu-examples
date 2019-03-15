@@ -10,41 +10,6 @@ def nalu_examples_deps():
             remote = "git@github.com:tadeoj/bazel_gwt_2.8.2.git",
         )
 
-    http_jar(
-        name = "org_dominokit_domino_ui",
-        urls = ["https://oss.sonatype.org/content/repositories/snapshots/org/dominokit/domino-ui/1.0-SNAPSHOT/domino-ui-1.0-20190312.103106-410.jar"],
-    )
-
-    http_jar(
-        name = "org_dominokit_domino_ui_sources",
-        urls = ["https://oss.sonatype.org/content/repositories/snapshots/org/dominokit/domino-ui/1.0-SNAPSHOT/domino-ui-1.0-20190312.103106-410-sources.jar"],
-    )
-
-    http_jar(
-        name = "org_gwtproject_timer_gwt_timer",
-        urls = ["https://repo.vertispan.com/gwt-snapshot/org/gwtproject/timer/gwt-timer/1.0-SNAPSHOT/gwt-timer-1.0-20180623.095409-6.jar"],
-    )
-
-    http_jar(
-        name = "org_gwtproject_i18n_gwt_cldr",
-        urls = ["https://repo.vertispan.com/gwt-snapshot/org/gwtproject/i18n/gwt-cldr/1.0-SNAPSHOT/gwt-cldr-1.0-20181227.163858-5.jar"],
-    )
-
-    http_jar(
-        name = "org_gwtproject_i18n_gwt_cldr_sources",
-        urls = ["https://repo.vertispan.com/gwt-snapshot/org/gwtproject/i18n/gwt-cldr/1.0-SNAPSHOT/gwt-cldr-1.0-20181227.163858-5-sources.jar"],
-    )
-
-    http_jar(
-        name = "org_gwtproject_i18n_gwt_datetimeformat",
-        urls = ["https://repo.vertispan.com/gwt-snapshot/org/gwtproject/i18n/gwt-datetimeformat/1.0-SNAPSHOT/gwt-datetimeformat-1.0-20180414.184100-1.jar"],
-    )
-
-    http_jar(
-        name = "org_gwtproject_i18n_gwt_datetimeformat_sources",
-        urls = ["https://repo.vertispan.com/gwt-snapshot/org/gwtproject/i18n/gwt-datetimeformat/1.0-SNAPSHOT/gwt-datetimeformat-1.0-20180414.184100-1-sources.jar"],
-    )
-
 def generated_maven_jars():
     jvm_maven_import_external(
         name = "com_google_gson_gson",
@@ -149,4 +114,42 @@ def generated_maven_jars():
         artifact = "com.squareup:javapoet:1.11.1",
         server_urls = ["http://central.maven.org/maven2"],
         licenses = ["notice"],  # Apache 2.0
+    )
+
+    ################################################################################################################
+    # Dominokit dependences
+    ################################################################################################################
+    http_jar(
+        name = "org_dominokit_domino_ui",
+        urls = ["https://oss.sonatype.org/content/repositories/snapshots/org/dominokit/domino-ui/1.0-SNAPSHOT/domino-ui-1.0-20190312.103106-410.jar"],
+    )
+
+    http_jar(
+        name = "org_dominokit_domino_ui_sources",
+        urls = ["https://oss.sonatype.org/content/repositories/snapshots/org/dominokit/domino-ui/1.0-SNAPSHOT/domino-ui-1.0-20190312.103106-410-sources.jar"],
+    )
+
+    http_jar(
+        name = "org_gwtproject_timer_gwt_timer",
+        urls = ["https://repo.vertispan.com/gwt-snapshot/org/gwtproject/timer/gwt-timer/1.0-SNAPSHOT/gwt-timer-1.0-20180623.095409-6.jar"],
+    )
+
+    http_jar(
+        name = "org_gwtproject_i18n_gwt_cldr",
+        urls = ["https://repo.vertispan.com/gwt-snapshot/org/gwtproject/i18n/gwt-cldr/1.0-SNAPSHOT/gwt-cldr-1.0-20181227.163858-5.jar"],
+    )
+
+    http_jar(
+        name = "org_gwtproject_i18n_gwt_cldr_sources",
+        urls = ["https://repo.vertispan.com/gwt-snapshot/org/gwtproject/i18n/gwt-cldr/1.0-SNAPSHOT/gwt-cldr-1.0-20181227.163858-5-sources.jar"],
+    )
+
+    http_jar(
+        name = "org_gwtproject_i18n_gwt_datetimeformat",
+        urls = ["https://repo.vertispan.com/gwt-snapshot/org/gwtproject/i18n/gwt-datetimeformat/1.0-SNAPSHOT/gwt-datetimeformat-1.0-20180414.184100-1.jar"],
+    )
+
+    http_jar(
+        name = "org_gwtproject_i18n_gwt_datetimeformat_sources",
+        urls = ["https://repo.vertispan.com/gwt-snapshot/org/gwtproject/i18n/gwt-datetimeformat/1.0-SNAPSHOT/gwt-datetimeformat-1.0-20180414.184100-1-sources.jar"],
     )

@@ -31,8 +31,7 @@ import static org.jboss.gwt.elemento.core.EventType.focus;
 /**
  * The TextField class is the text widget used by the application.
  */
-public class TextField
-    implements IsElement<HTMLElement> {
+public class TextField implements IsElement<HTMLElement> {
 
   private HTMLElement container;
 
@@ -95,8 +94,7 @@ public class TextField
   }
 
   @Override
-  public HTMLElement element() {
+  public HTMLElement asElement() {
     return this.container;
   }
-
 }

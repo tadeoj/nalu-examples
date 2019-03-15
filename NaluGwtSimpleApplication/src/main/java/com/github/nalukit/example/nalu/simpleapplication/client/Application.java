@@ -23,8 +23,7 @@ import com.google.gwt.core.client.EntryPoint;
 /**
  * Entry point classes define <code>onModuleLoad()</code>.
  */
-public class Application
-    implements EntryPoint {
+public class Application implements EntryPoint {
 
   /**
    * <p>This is the entry point method.</p>
